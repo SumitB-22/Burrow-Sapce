@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4a90e2, #50c2c9);
+            color: #fff;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffe082;
+        }
+
+        main {
+            padding: 3em 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .contact-section {
+            margin-bottom: 2em;
+            display: flex;
+            gap: 2em;
+            align-items: center;
+            background: #fff;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section .details {
+            flex: 1;
+        }
+
+        .contact-section .details h3 {
+            margin-bottom: 0.5em;
+            color: #4a90e2;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 1em;
+                padding-top: 1em;
+                align-items: flex-start;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 1em;
+            }
+
+            .contact-section img {
+                width: 120px;
+                height: 120px;
+            }
+
+            footer {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Burrow Space</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance, feel free to reach out to our team below.</p>
+
+        <section class="contact-section">
+            <img src="man.png" alt="Person 1">
+            <div class="details">
+                <h3>Aryan Goyal</h3>
+                <p>Email: aryangoyalbusiness@gmail.com</p>
+                <p>Phone: +91 6396667308</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <img src="manager.png" alt="Person 2">
+            <div class="details">
+                <h3>Tejasvi Singh</h3>
+                <p>Email: Tejayashsingh@gmail.com</p>
+                <p>Phone: +91 6396667308</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <img src="boy.png" alt="Person 3">
+            <div class="details">
+                <h3>Prince Pratap</h3>
+                <p>Email: princepratapism@gmail.com</p>
+                <p>Phone: +91 7668629313</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 Burrow Space. All rights reserved.</p>
+    <a href="#">Contact Us</a>
+</footer>
+</body>
+</html>
